@@ -3,6 +3,12 @@
        Copyright (c) 2018 Stefan Kremser
               github.com/spacehuhn
   ===========================================
+             Updated 2022 7ANG0N1N3
+              github.com/7ang0n1n3
+
+             Removed Serial output
+            Added OLED screen output
+  ===========================================
 */
 
 // ===== Settings ===== //
@@ -25,29 +31,13 @@ const char ssids[] PROGMEM = {
   "HACK THE PLANET\n"
   "DEFCON\n"
   "CANT STOP THE SIGNAL\n"
-  "0000softbank\n"
-  "0001softbank\n"
-  "0002softbank\n"
-  "mobilepoint\n"
   "rabbit hole\n"
   "Red Pill\n"
   "Blue Pill\n"
   "FREE TIBET\n"
-  "FUCK THE CCP\n"
-  "RUSSIAN GOVERNMENT SUCKS\n"
-  "PUNCH A NAZI\n" 
   "www.tokyo2600.com\n"
   "Tokyo 2600\n"
   "Freedom is not FREE\n"
-  "日野警察署\n"
-  "JR East WiFi\n"
-  "JR West WiFi\n"
-  "Welcome to Japan\n"
-  "日本へよこそう\n"
-  "NARITA-WIFI\n"
-  "PUTIN IS A FUCKTARD\n"
-  "WWIII is COMING\n"
-  "AFN TOKYO\n"
   "✺◟(•‿•)◞✺\n"
   "〣( ºΔº )〣\n"
 };
@@ -60,6 +50,7 @@ const char ssids[] PROGMEM = {
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+// ===== Setting for OLED Screen ===== //
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
